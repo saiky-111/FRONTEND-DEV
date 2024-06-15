@@ -1,6 +1,7 @@
 # Frontend Development Projects!
 
 Welcome to my frontend development repository. This repository contains notes, codes, and projects related to various frontend technologies such as HTML, CSS, JavaScript, Tailwind CSS, React, Redux, Git, Github and NPM .
+Welcome to my frontend development repository. This repository contains notes, codes, and projects related to various frontend technologies such as HTML, CSS, JavaScript, Tailwind CSS, React, Redux, Git, Github and NPM .
 
 ## Table of Contents
 - [Introduction](#introduction)
