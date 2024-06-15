@@ -1,0 +1,9 @@
+INLINE- Bold tag, Anchor Tag, image tag, italic tag
+>> The width of the inline element is as much as, the amount of 
+content it has inside it.
+
+
+BLOCK- h1 tag, P tag
+>> By default width of block elements is always 100%, even if you
+ just write a word in it, or a sentence.
+ 
