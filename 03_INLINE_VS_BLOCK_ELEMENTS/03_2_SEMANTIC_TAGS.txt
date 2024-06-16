@@ -1,0 +1,55 @@
+-> Semantic Means Meaning
+
+//Defination ->A Semantic element clearly defines it's meaning to
+both the browser and the developer.
+
+-> In HTML, Certain tags like semantic tags , which works just like div, 
+which are used to categorize and combine elements into sections.
+
+->Semantic tags are just like div, there are no extra functionality.
+
+->It's just that the semantic tags have their own meaning.
+
+-> Examples of Semantic HTML Tags are : Nav tags, Header tag, 
+Main Tag, Section Tag, Footer Tag, 
+
+-> Google Search Engine comes for searching our website, 
+Google Search Engine will become confuse , if we use div
+ everywhere, i.e why we use semantic tags like header ,footer,
+  so that the engine can understand which is what.
+
+-> as a developer also, the code becomes readable, when semantic tags are sued.
+
+  -> Links are kept under nav tags, since it is related to navigation.
+  They are just like div, just that it carries a meaning that 
+  there are some navigation links inside it.
+
+  -> If we want , we can keep anything inside these semantic tags, 
+  just the search engine would get confuse.
+
+  ->In the Bottom part of the website , footer tag is used.
+
+  -> In  the main tag, we keep the entire content of the website, 
+  except the header.
+
+  -> Section tag is used to show a section of the website, just like div.
+
+  -> Ideally we can add anything in anywhere, but it's not a good practice.
+
+--------> these all are above block level semantic tags, used in place of div.
+
+  -> go to note2.png
+
+  -> 2 useful semantic Inline tags:
+     <em> tag i.e emphasis tag is used to give more power to a word. 
+     It just makes the text slant just like italic.
+
+  ->since, <i> tag doesn't carry any meaning, it's just a stylistic choice.
+
+   ->But when <em> tag is used, and a screen reader is reading the line,
+    it will read with a emphasis given on the word, i.e it will prononunce
+     the word differentely.
+
+  -> <strong> tag i.e strong tag is used to give more power to a word. 
+     It just makes the text bold just like b tag , i.e, bold tag.
+     -> It defines a importtant text in the document.
