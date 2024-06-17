@@ -1,0 +1,4 @@
+>Any web page's content will be written in the html file.
+>It tells the structure of the website. 
+>CSS's work is to style the website to make it beautiful.
+>border, background color, these are the properties of css.

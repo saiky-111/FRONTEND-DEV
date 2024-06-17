@@ -1,0 +1,23 @@
+Ex :
+<h1>Frontend Development</h1>
+
+-> in this line, <h1> is a opening tag
+</h1> is a closing tag.
+----> There are some tags , which are self closing tags.
+
+---> when  we fill  any content inside the tags, 
+it is collectively known as HTML element.
+---> Tag is just a representation which we keep in angular brackets.
+
+--> The things which come to us created from browser, is called an element.
+
+<h1>Frontend Development</h1>   ------> This is collectively known as HTML element.
+
+----> Height and Width that we talk about is of an element, and not of a tag.
+-----> Element has it's height and width.
+
+-----> Tag has no height and width.
+
+-> Tag is just there to represent the element.
+
+->> when we use p tag and fill content inside it, it represents a paragraph element.

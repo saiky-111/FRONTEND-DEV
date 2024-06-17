@@ -25,7 +25,7 @@ This repository is a collection of my work and learnings from the frontend devel
 
 ### HTML Introduction
 - **Description**: Basic HTML project to get familiar with HTML tags and structure.
-- **Link**: [HTML Introduction](link-to-project)
+- **Link**: [HTML Introduction](https://saikatdhibar-portfolio.netlify.app/)
 
 ### Frontend Roadmap
 - **Description**: A roadmap to frontend development covering various topics and technologies.

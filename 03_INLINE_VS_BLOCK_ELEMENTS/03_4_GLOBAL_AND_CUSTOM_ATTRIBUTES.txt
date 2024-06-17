@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Frontend Roadmap</title>
+  </head>
+
+
+  <body style="font-family: sans-serif"> --->Here we have given style attribute to  body.
+-----> style="font-family: sans-serif"  -> this is the style attribute above.
+  ---> Attributes are always kept in the opening tags of any element.
+
+-----------------------------------------------------------
+
+  <a
+        href="https://en.wikipedia.org/wiki/Graphical_user_interface"
+        target="_blank"
+        >graphical user interface</a
+      >
+---> Here in the Anchor tag href and target are the attributes.
