@@ -1,0 +1,36 @@
+https://www.youtube.com/results?search_query=bhajan+marg
+https://www.youtube.com/results?search_query=procoderr
+
+
+<form id="search-form" action="/results" class="style-scope ytd-searchbox">
+
+
+<input id="search" autocapitalize="none" autocomplete="off" 
+autocorrect="off" name="search_query" tabindex="0" type="text" 
+spellcheck="false" placeholder="Search" aria-label="Search" role="combobox"
+ aria-haspopup="false" aria-autocomplete="list" dir="ltr" 
+ style="outline: none;" class="ytd-searchbox">
+
+
+Since, action="/results" is there in the form element, therefore the URL redirects to 
+https://www.youtube.com/results
+
+Since,  name="search_query" is there in the input element, therefore the URL redirects to 
+https://www.youtube.com/results?search_query=
+
+After this, the input we entered gets added: with, if there is a space it automatically
+ adds a '+' sign in between.
+https://www.youtube.com/results?search_query=bhajan+marg
+
+
+So, the form tag creates URL by action value and the name attribute and the input we entered
+, it creates an URL , and then it redirects to the same URL.
+
+--> for different websites it is diferent , like:
+After action value it puts a question mark  by itself. THen the value of name attribute is added
+,then '=' sign then the input we entered.
+
+
+ https://www.flipkart.com/search?q=phone&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off
+
+<form class="Hy6F9O header-form-search" action="/search"

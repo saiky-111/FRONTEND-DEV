@@ -21,3 +21,31 @@
         >graphical user interface</a
       >
 ---> Here in the Anchor tag href and target are the attributes.
+
+----> In Img tag, alt attribute is there, src attribute is there.
+
+----> But, if we give src attribute in <p> tag , the browser 
+will ignore it, since it doesn't know what to do with it.
+
+---> So, some attributes are there which are made for a particular
+ element only like alt attribute and src attribute, which
+  can be given in img tag only.
+
+  -->Some attributes are there which can be given in any element, are called Global attributes.
+
+---> Defination: Global attributes are attributes that can be used with all HTML elements.
+EX: Style attribute is a global attribute. It can be given to any element and it will work.
+
+----> Another global attribute is hidden.
+Ex: <h1 hidden>Frontend Development</h1>  ---> If we do this, 
+Frontend Development will not show.
+
+---> In Hidden attribute, we dont require to give any values, like Style attribute.
+
+---> Another global attribute we can give is Title attribute
+
+    <img
+      src="/images/html-css-javascript.png"
+      alt="html-css-javascript"
+      style="width: 100%; max-width: 600px"
+    />
