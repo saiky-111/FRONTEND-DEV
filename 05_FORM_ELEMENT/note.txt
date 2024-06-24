@@ -9,8 +9,9 @@ https://www.youtube.com/results?search_query=procoderr
 autocorrect="off" name="search_query" tabindex="0" type="text" 
 spellcheck="false" placeholder="Search" aria-label="Search" role="combobox"
  aria-haspopup="false" aria-autocomplete="list" dir="ltr" 
- style="outline: none;" class="ytd-searchbox">
+ style="outline: none;" class="ytd-searchbox"> 
 
+--> Input is always inside the Form tag.
 
 Since, action="/results" is there in the form element, therefore the URL redirects to 
 https://www.youtube.com/results
@@ -21,9 +22,9 @@ https://www.youtube.com/results?search_query=
 After this, the input we entered gets added: with, if there is a space it automatically
  adds a '+' sign in between.
 https://www.youtube.com/results?search_query=bhajan+marg
+--> See NOTE_1.png
 
-
-So, the form tag creates URL by action value and the name attribute and the input we entered
+So, the form tag creates URL by the values of action and the name attribute and the input we entered
 , it creates an URL , and then it redirects to the same URL.
 
 --> for different websites it is diferent , like:
@@ -33,4 +34,17 @@ After action value it puts a question mark  by itself. THen the value of name at
 
  https://www.flipkart.com/search?q=phone&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off
 
-<form class="Hy6F9O header-form-search" action="/search"
+<form class="Hy6F9O header-form-search" action="/search" method="GET">
+
+<input class="zDPmFV" type="text" 
+title="Search for products, brands and more" name="q" autocomplete="off"
+ placeholder="Search for products, brands and more" value="phone">
+
+-> value attribute in input tag , shows the value we searched
+-> The things written in the link after that , is something used by flipkart for tracking
+Even if we remove that part , it will give the same result.
+
+ --> See NOTE_2.png
+
+ ->Form tag creates the URL dynamically.
+ -> In anchor tag, we hard code the URL.
