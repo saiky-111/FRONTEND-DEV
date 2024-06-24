@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+--> HTML Doctype tells which version of HTML are we using. HTML5, currently using.
+--> If we write html after DOCTYPE, browser gets informed that it's HTML version 5.
+
+HTML4: We used to write like this:
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+.....
+</html>
+ --> Our whole code lies inside the HTML tag, be it head or body tag
+ --> It represents a document (page) of HTML.
+--> it is the biggest tag.
+
+--> Inside body tag, if e write anything, it shows on the screen of the browser.
+
+--> Inside head tag, we can only see title and favicon.ico icon. 
+Other than these , we can't see anything.

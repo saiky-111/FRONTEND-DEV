@@ -1,0 +1,14 @@
+--> In a computer, To access the resources of a computer, there are 2 ways:
+One is: Command Line Interface(CLI)
+Another is: Graphical User Interface(GUI)
+
+-> A normal user or a consumer uses laptop/mobile,
+he/she uses the Graphical User Interface(GUI)
+
+-> GUI means , we'll see the pictures(Graphic) and interact with it.(Interaction
+with the pictures)
+
+->For accessing CLI in windows, there are two options:
+ we use CMD(Command Prompt) and Windows Powershell.
+
+ -> The complete whole thing is a shell, and there are two shells
