@@ -11,6 +11,7 @@
 
   <body style="font-family: sans-serif"> --->Here we have given style attribute to  body.
 -----> style="font-family: sans-serif"  -> this is the style attribute above.
+----> We write the attribute, then in double quotes , we give some values to it.
   ---> Attributes are always kept in the opening tags of any element.
 
 -----------------------------------------------------------
@@ -29,7 +30,7 @@ will ignore it, since it doesn't know what to do with it.
 
 ---> So, some attributes are there which are made for a particular
  element only like alt attribute and src attribute, which
-  can be given in img tag only.
+  can be given in img tag only. -> href is for anchor tag.
 
   -->Some attributes are there which can be given in any element, are called Global attributes.
 
@@ -40,12 +41,75 @@ EX: Style attribute is a global attribute. It can be given to any element and it
 Ex: <h1 hidden>Frontend Development</h1>  ---> If we do this, 
 Frontend Development will not show.
 
----> In Hidden attribute, we dont require to give any values, like Style attribute.
+----->     <img
+      src="/images/html-css-javascript.png"
+      alt="html-css-javascript"
+      style="width: 100%; max-width: 600px"
+      hidden
+    />
+----> Now the above image is hidden.
 
----> Another global attribute we can give is Title attribute
+--->Some attributes are there, where we dones't require to give any values to it. 
+e.g. hidden attribute
+
+---> In Hidden attribute, we dont require to give any values.
+
+---> In Style attribute, we are required to give some values.
+
+---> Another global attribute we can give is Title attribute, which takes some value.
 
     <img
       src="/images/html-css-javascript.png"
       alt="html-css-javascript"
       style="width: 100%; max-width: 600px"
+      title="Frontend Roadmap"
     />
+
+  --> So, after writing the title attribute, if we hover our cursor over 
+  the element where title attribute is given, it will show a text , of
+  the value given to title attribute.
+  ---> see note4.png
+
+  ---> And the order of the attributes doesn't matter, whether href 
+  attribute is ahead or target attribute is ahead, in a an anchor(<a>)tag.
+
+ <a href="https://en.wikipedia.org/wiki/Graphical_user_interface"
+    target="_blank" title="graphical user interface">graphical user interface</a>
+
+    -> when cursor is hovered over the link text of graphical user interface,
+    a text wil be shown of graphical user interface.
+
+-> It is called a Tool Tip, the text which is shown , when cursor is hovered over something.
+
+--> Some attributes are there which when used doesn't show it's effect directly.
+--> Examples are: class and id attributes.
+
+-> eg: <h1 class= "heading" >Frontend Development</h1>
+
+->In the value of class or id, any text or string is allowed to give.
+-> Class attribute is mostly used in CSS, by using which some changes are seen.
+-> eg: <h1 class= "heading" id="heading" >Frontend Development</h1>
+
+-> we'll used id attribue in CSS as well as JAVASCRIPT.
+
+--> Another attribute is data attribute, which is mainly used in Javascript.
+-> Data hyphen then any value then equalto then any value.
+
+--->   data-=""  used to store custom data private to a page or application
+
+-> eg: <h1 class= "heading" id="heading" data-title="jebhf" >Frontend Development</h1>
+
+----------------------------------------------------------------------
+CUSTOM ATTRIBUTES
+
+Custom attributes are anything you write, abcdefgh, anything will be a attribute in HTML.
+-> We know it does not exist in the specification of HTML, but is stiil attribueribute, and then we can
+ use it in CSS and JAVASCRIPT
+
+Ex: <h1 abcdefgh >Frontend Development</h1>  
+-> we can also give some value to it and use it in  CSS and JAVASCRIPT
+-> But these custom attributes are generally not used.
+
+Ex: <h1 saikat="dhibar" >Frontend Development</h1> 
+ --->The above saikat="dhibar", It will be valid attribute in pov of CSS and JAVASCRIPT.
+ --> But it does not exist in the specification of HTML.
