@@ -1,1 +1,28 @@
 It is told that,our main file should be named index.html
+>Why?
+-> Index.html is a special file , such that even if we don't write
+anything after the slash, then also it will serve.
+http://127.0.0.1:5500/01_WHY_USE_INDEX.HTML/index.html
+http://127.0.0.1:5500/01_WHY_USE_INDEX.HTML/
+-> Both these will give same output
+
+->But it is not the case with about.html or any other file name.html
+
+-> Any browser by default, serves the index.html file in the main or 
+root directory
+
+
+https://frontend-roadmap-saiky-111.netlify.app
+https://frontend-roadmap-saiky-111.netlify.app/index.html
+-> Both these above links gives same output, because netlify servers 
+by default without telling the index.html, serving in the home page
+
+-> Any name other than index.html will not get served 
+
+
+->We should keep it index.html so that if we deploy it on some server, 
+by default it gets the index.html file and serves it on the home page 
+automatically.
+->If any other name is given, error will come, like Page Not found
+
+-> Netlify may serve if we keep our main file name as home.html file
