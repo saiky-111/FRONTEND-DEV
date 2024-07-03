@@ -101,7 +101,7 @@ e.g. hidden attribute
 
 ----------------------------------------------------------------------
 CUSTOM ATTRIBUTES
-
+ 
 Custom attributes are anything you write, abcdefgh, anything will be a attribute in HTML.
 -> We know it does not exist in the specification of HTML, but is stiil attribueribute, and then we can
  use it in CSS and JAVASCRIPT
