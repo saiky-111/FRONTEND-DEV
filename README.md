@@ -8,6 +8,9 @@ Welcome to my frontend development repository. This repository contains notes, c
   - [Dummy Web Server](#dummy-web-server)
   - [HTML Introduction](#html-introduction)
   - [Frontend Roadmap](#frontend-roadmap)
+  - [Frontend Roadmap](#inline-vs-block)
+  - [Frontend Roadmap](#form-element)
+
 - [Technologies](#technologies)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -34,6 +37,10 @@ This repository is a collection of my work and learnings from the frontend devel
 ### Inline vs Block
 - **Description**: Understanding the difference between Inline and Block elements, as well as span and div.
 - **Link**: [Inline BLock](https://dummy-inline-block-saiky-111.netlify.app/)
+
+### Form Element
+- **Description**: Understanding how forms are created and it's intricate details.
+- **Link**: [Inline BLock](https://form-element.netlify.app/)
 
 ## Technologies
 The following technologies are covered in this repository:
