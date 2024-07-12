@@ -8,8 +8,8 @@ Welcome to my frontend development repository. This repository contains notes, c
   - [Dummy Web Server](#dummy-web-server)
   - [HTML Introduction](#html-introduction)
   - [Frontend Roadmap](#frontend-roadmap)
-  - [Frontend Roadmap](#inline-vs-block)
-  - [Frontend Roadmap](#form-element)
+  - [Inline vs Block](#inline-vs-block)
+  - [Form Element](#form-element)
 
 - [Technologies](#technologies)
 - [Installation](#installation)
