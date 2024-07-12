@@ -1,86 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>HTML Form</title>
-    
+
 </head>
 <form>
-   <h1>HTML Form</h1>
-   <p>Own Server Search Box:</p>
+    <h1>HTML Form</h1>
 
-   <form action="/"><!-- By putting slash(/) here, it will point to our own website
+    <h2>Login Form</h2>
+<div style="background-color: blueviolet;">
+    <form action="/">
+        <p>
+        <div>
+            <label for="name">Name</label>
+        </div><!--Label is by default inline.-->
+        <!-- If we want it in a seperate line, we have to wrap it in a block element,
+     What we can do is: We can put the label in a <p> tag, but that
+        will take too much of the space. So we will use <div> instead. Since div is a block element.
+            In <div> , there will be no gap.It will come just above the input field. -->
+        <input id="name" type="text" name="name" placeholder="Enter Your Name">
+        <!-- For giving gap between two seperate input fields using <p> tag.(Preferable)
+    , can use <br> tag also.-->
+        </p>
+
+        <p>
+        <div><!--CTRL +D selects multiple words of same name. AND Ctrl+U unselects it.-->
+            <label for="email">Email</label>
+        </div>
+        <input id="email" type="email" name="email"  placeholder="Enter Your Email">
+        </p>
+
+        <p>
+            <div>
+                <label for="mobile">Mobile Number</label>
+            </div>
+            <input id="mobile" type="tel" name="mobile" placeholder="Enter Your Mobile Number">
+            </p><!-- type="tel" is used for mobile number-->
+
+            <p>
+                <div>
+                    <label for="password">Password</label>
+                </div>
+                <input id="password" type="password" name="password" placeholder="Enter Your Password">
+                </p>
+<!-- NOW, we have given NAME attribute in all the inputs.
+ Due to this: when we submit the form, every information submitted on the form,
+ will redirected in a URL.-->
+ <!--We shouldn't send passwords in URL , like that.
+ We do it through JAVASCRIPT, by coding it. -->
+ <!--But this is the form's default behaviour to send all the 
+ information in the URL.-->
+ <label>
+    <input type="checkbox" required> Agree to Terms & Conditions
+</label><br>
+               <p><button type="submit">Submit</button>
+                <button type="reset">Reset</button></p> 
+    </form>
+</div>
+
+
+
+
+
+
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>-----------------------------------LEARNINGS BELOW:--------------------------------</p>
+
+
+   <!-- <div hidden>--><!-- we have put the hidden attribute , so now it will be hidden 
+    No code will be seen.-->
+
+        <p>Own Server Search Box:</p>
+
+        <form action="/"><!-- By putting slash(/) here, it will point to our own website
     or our own server, i.e we will think our website is only getting reloaded-->
-    <!--Inside form element . we put input element.-->
-    <input type="text" name="search">
-    <!--Type is a attribute in input tag. Even if we don't type type="text",
+            <!--Inside form element . we put input element.-->
+            <input type="text" name="search">
+            <!--Type is a attribute in input tag. Even if we don't type type="text",
     it will automatically detect it as text,by default .-->
-    <!--But we should mention it, as it's a good practice.-->
-    <!--Input is a self closing tag-->
-    <!--When we only give slash(/) , it points to the main URL of the website,
+            <!--But we should mention it, as it's a good practice.-->
+            <!--Input is a self closing tag-->
+            <!--When we only give slash(/) , it points to the main URL of the website,
     e.g. 127.0.0.1:5500/  it becomes-> http://127.0.0.1:5500/?search=hi  (when we searched hi)
     it doesn't include any file.(now here it won't point to index.html)-->
-   </form>
+        </form>
 
-    <form action="/">
-        <!--If we remove input field from form element, but keep the form element,
+        <form action="/">
+            <!--If we remove input field from form element, but keep the form element,
     (as we can see it's dimentions are (932*0)
     in web page we won't see it, but , if we inspect it's height is zero at the moment,
     since there is no content inside. By default, form element is empty.
     Also, form element is a block level element, it will cover the whole width of the screen.-->
 
-    </form>
+        </form>
 
-<p>Useless Search Box:</p>
-    <div action="https://github.com/saiky-111">
-        <input type="text" name="search">
-    <!--Apparently, form element is just like div, but it adds functionality.
+        <p>Useless Search Box:</p>
+        <div action="https://github.com/saiky-111">
+            <input type="text" name="search">
+            <!--Apparently, form element is just like div, but it adds functionality.
     i.e if we change the form element to div, the input box will display as it is.
     But, when we type inside it and enter, nothing will happen.
     So, the functionality of the form element is to create the URL-->
-</div>
+        </div>
 
 
-<p>Youtube Search Box:</p>
-<form action="https://www.youtube.com/results">
-    <input type="text" name="search_query">
-    <!-- If we want , we can redirect our form element to youtube, flipkart, any website.
+        <p>Youtube Search Box:</p>
+        <form action="https://www.youtube.com/results">
+            <input type="text" name="search_query">
+            <!-- If we want , we can redirect our form element to youtube, flipkart, any website.
      https://www.youtube.com/results?search_query=hi-->
-    </form>
+        </form>
 
 
-    <p>Amazon Search Box:</p>
-<form action="https://www.amazon.in/s">
-    <input type="text" name="k">
-    <!-- If we want , we can redirect our form element to youtube, flipkart, any website.
+        <p>Amazon Search Box:</p>
+        <form action="https://www.amazon.in/s">
+            <input type="text" name="k">
+            <!-- If we want , we can redirect our form element to youtube, flipkart, any website.
      https://www.amazon.in/s?k=mobile-->
-     <button>Type Anything and Search on Amazon</button>
-     <!-- We use button element in form to submit-->
-    </form>
+            <button>Type Anything and Search on Amazon</button>
+            <!-- We use button element in form to submit-->
+        </form>
 
-<!--If we add multiple input fields in Form, how will URL Behave?-->
-<p>How will Mutiple Input Fields Behave?:</p>
-<form action="/">
-    <input type="text" name="a">
-    <input type="text" name="b">
-     <button>Submit</button>
-     <!--If searched html in one, css in one, it combines the URL with & in between.
+        <!--If we add multiple input fields in Form, how will URL Behave?-->
+        <p>How will Mutiple Input Fields Behave?:</p>
+        <form action="/">
+            <input type="text" name="a">
+            <input type="text" name="b">
+            <button>Submit</button>
+            <!--If searched html in one, css in one, it combines the URL with & in between.
      e.g. http://127.0.0.1:5500/?a=html&b=css  -->
-     <!--If searched html in one, it combines the URL
+            <!--If searched html in one, it combines the URL
      e.g. http://127.0.0.1:5500/?a=html&b=  -->
-    </form>
+        </form>
 
-    <p>How will Mutiple Input Fields Behave?: In Amazon</p>
-    <form action="https://www.amazon.in/s">
-        <input type="text" name="k" placeholder="Only this will work">
-        <input type="text" name="b">
-        <input type="text" name="c">
+        <p>How will Mutiple Input Fields Behave?: In Amazon</p>
+        <form action="https://www.amazon.in/s">
+            <input type="text" name="k" placeholder="Only this will work">
+            <input type="text" name="b">
+            <input type="text" name="c">
 
-         <button>Submit</button>
-        <!--https://www.amazon.in/s?k=mobile&b=goat&c=hen--> <!--
+            <button>Submit</button>
+            <!--https://www.amazon.in/s?k=mobile&b=goat&c=hen--> <!--
         If this is searched, amazon only recognizes k ,and shows the result based on k
         and ignores the other two.
         Even if amazon, doesn't get K, it will only redirect to it's home page.
@@ -88,84 +161,120 @@
         </form>
 
         <p>How will Mutiple Input Fields Behave?: In Youtube</p>
-<form action="https://www.youtube.com/results">
-    <input type="text" name="search_query">
-    <input type="text" name="b">
-     <button>Submit</button>
-     <!--https://www.youtube.com/results?search_query=html&b=css
+        <form action="https://www.youtube.com/results">
+            <input type="text" name="search_query">
+            <input type="text" name="b">
+            <button>Submit</button>
+            <!--https://www.youtube.com/results?search_query=html&b=css
      If this is searched, youtube only recognizes search_query , and shows the result based on
         search_query and ignores other inputs. 
         If Youtube, doesn't get search_query, it will show No results found -->
-    </form>
+        </form>
 
-    <p>Different Input Types:</p>
-    <form action="/">
-        <input type="email" name="a" placeholder="Can write only email here">
-        <!-- type="email" checks before the submission of the form,if
+        <p>Different Input Types:</p>
+        <form action="/">
+            <input type="email" name="a" placeholder="Can write only email here">
+            <!-- type="email" checks before the submission of the form,if
          it's a valid email or not. i.e it puts a validatiuon 
          e.g abcd@hfdg is a valid email-->
-         <!--@ is replaced by %40 
+            <!--@ is replaced by %40 
              space is %20-->
 
-             <input type="password" name="a" placeholder="write only password here"><!--it becomes starry , text is hidden-->
-             <!--You can convert passwords in websites to text in Inspect by doing this-->
-             <input type="number" name="a" placeholder="write only number here">
-             <!--Here only we type numbers, and only e can be written since
+            <input type="password" name="a"
+                placeholder="write only password here"><!--it becomes starry , text is hidden-->
+            <!--You can convert passwords in websites to text in Inspect by doing this-->
+            <input type="number" name="a" placeholder="write only number here">
+            <!--Here only we type numbers, and only e can be written since
              it is exponent in maths. -->
-             <input type="checkbox" name="a"><!--gives a checkbox-->
-             <input type="color" name="a"><!--a colourpicker will appear-->
-             <input type="date" name="a"><!--date picker will appear-->
-             <input type="time" name="a"><!--date picker will appear-->
-             <input type="file" name="a"><!--file picker will appear-->
-             <input type="tel" name="a"placeholder="write only number here">
-             <!--if input type is tel, we can type numbers as well as letters,
+            <input type="checkbox" name="a"><!--gives a checkbox-->
+            <input type="color" name="a"><!--a colourpicker will appear-->
+            <input type="date" name="a"><!--date picker will appear-->
+            <input type="time" name="a"><!--date picker will appear-->
+            <input type="file" name="a"><!--file picker will appear-->
+            <input type="tel" name="a" placeholder="write only number here">
+            <!--if input type is tel, we can type numbers as well as letters,
              but when we open it on phone: it will only show us numbers to type.
               -->
-              <input type="submit" value ="search" name="a">
-              <button>Submit</button>
+            <input type="submit" value="search" name="a">
+            <button>Submit</button>
 
-            </form>
-              <!--If we want , we can submit our form, through input element, 
+        </form>
+        <!--If we want , we can submit our form, through input element, 
               even if we give, input type=submit-->
-             <!-- If we want to write something else on the button, 
+        <!-- If we want to write something else on the button, 
               like: search . SO, we'll give: value="search"
               Normally these are not used.  -->
 
 
-              <p>Different Types Of Buttons:</p>
-           <form>
-              <!--Types of Buttons-->
-              <!--In button : type="submit" is by default.
+        <p>Different Types Of Buttons:</p>
+        <form>
+            <!--Types of Buttons-->
+            <!--In button : type="submit" is by default.
               Just like: when input : type="text" is by default-->
-<input type="text">
-         <button type="submit">Submit</button>
-         <!--If we give button type="button"  , it does nothing, it
+            <input type="text" placeholder="type anything">
+            <!--inside input field, placeholder is written-->
+            <button type="submit">Submit</button>
+            <!--If we give button type="button"  , it does nothing, it
          just gets clicked. No Action. Now through Javascript you can tell,
          what to do with this button.
          Like when in a form, when back button is to be applied, then we 
          use this. By javascript we tell it's functionality to do back -->
-         <button type="button">Submit</button>
-         <button type="reset"> Click Here To Reset</button>
-         <!-- WHen this is click everything will be reset.-->
+            <button type="button">Submit</button>
+            <button type="reset"> Click Here To Reset</button>
+            <!-- WHen this is click everything will be reset.
+          since, we used type="reset"-->
         </form>
 
 
         <p>Validators in Form:</p>
-        <form>
-           <!--Types of Buttons-->
-           <!--In button : type="submit" is by default.
-           Just like: when input : type="text" is by default-->
-<input type="text">
-      <button type="submit">Submit</button>
-      <!--If we give button type="button"  , it does nothing, it
-      just gets clicked. No Action. Now through Javascript you can tell,
-      what to do with this button.
-      Like when in a form, when back button is to be applied, then we 
-      use this. By javascript we tell it's functionality to do back -->
-      <button type="button">Submit</button>
-      <button type="reset"> Click Here To Reset</button>
-      <!-- WHen this is click everything will be reset.-->
-     </form>
+        <form action="/">
 
-</body>
+            <input type="text" required>
+            <!-- Required attribute, will work as a validation, 
+      will show : Please fill out this field. , if we dont' fill the field-->
+            <input type="password" placeholder="Enter Password" minlength="6" maxlength="10">
+            <!--Min Length , Max length allows user to enter charaters between 
+      the specified length of characters.
+      It will give us some error , if we give less character than minlength,
+      and we can't use more charcters than maxlength.(it won't allow)-->
+            <!-- Error will be given , at any one input field. at a time.-->
+            <input type="number" min="100">
+            <!--here min attribute ensures the value is not less than 100, i.e must be greater than 100-->
+            <!-- Here, we did min -> so now it will compare the entered value, if it is greater than
+ 100 or not, if not, then it will give error to enter a value greater than 100.-->
+
+            <input type="number" min="100" max="500">
+            <!--here max attribute ensures the value must be less than 500-->
+
+            <button type="submit"> Click Here To Submit</button>
+        </form>
+
+
+
+        <p>Labels in Input Fields:</p>
+        <form action="https://wwww.flipkart.com/">
+            <label for="flipkart">Flipkart Search</label><!-- Some value we wrote in label-->
+            <input id="flipkart">
+            <!--Label tag is used with for.
+In for we have to give: to which input  we have to connect the label,
+that input's ID we'll have to give (in FOR).-->
+
+            <!-- That is: the id which is given in input--: well have to copy it in for of label.
+ By doing this, the label gets connected to the input.-->
+            <!--Means , when we click on the label, the cursor will blink ,or 
+ redirect to it's connected input id.(This happens because of the for attribute.)-->
+            <button>Search on Flipkart</button>
+        </form>
+
+        <form action="https://wwww.youtube.com/">
+            <label for="flipkart">Youtube Search</label><!-- Some value we wrote in label-->
+            <input id="youtube">
+            <!-- Here even if input id is youtube, but the for attribute value
+         is flipkart, so when we click it: the cursor will point to the
+         flipkart input field.-->
+            <button>Search on Youtube</button>
+
+   <!-- </div>-->
+    </body>
+
 </html>

@@ -1,0 +1,8 @@
+-> Most websites in the world use websites
+-> Java and Javascript are not same, just like Car and Carpet are not same.
+Javascript can be used to make:
+>Backend Dev
+>Frontend Dev
+>Mobile App
+>Desktop App
+>Game Dev
