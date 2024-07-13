@@ -1,9 +1,32 @@
 //CSS IS AWESOME -meme
 //If there is the big box, but our text goes outside.
 //That's our mistake,i.e whoever has given the width of the box.
-//But the beauty of CSS is that
+//But the beauty of CSS is that the text which was going outside the box,
+now also it is showing, i.e CSS hasn't cut the text.
 
+-> CSS- Cascading Style Sheet
 
 //Installing One Dark Pro for colourful code snippets, i.e it colourifies the code
 
-//Material Icon Theme
+//Installing Material Icon Theme-> actual icons for different files
+
+-> Style sheet means list or sheet of styles. We want our webpage to give colour,
+ position of some text , text colour, different fonts etc.
+
+->Our webpage is mainly made up of HTML. We add CSS additionaly to it to give style,
+we add Javascript to give functionality.
+
+
+-> We can write our CSS in HTML in Three ways:
+
+1-> Inline CSS-> which we give inside a HTML tag.
+-> Inside every HTML element, there is style attruibute., there we can write CSS.
+--> We can also say this, element sty;e. i.e it is only applied on that element
+-> style given only on that element is called inline CSS.
+-> Color -> property changes the Color of the text.
+
+-> There is a principle in Coding i.e DRY-> Don't Repeat Yourself
+-> i.e don't repeat the code, again and again.
+-> The code you are writing once, should work all the time.(for all similar elements.)
+
+-> For this, we write a style tag inside the head tag.
